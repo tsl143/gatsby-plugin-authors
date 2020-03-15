@@ -4,7 +4,7 @@ export default {
       allMarkdownRemark {
         edges {
           node {
-            fields {
+            frontmatter {
               author
             }
           }

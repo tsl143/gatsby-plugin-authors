@@ -52,9 +52,9 @@ export const createPages = async (
 
   const authorSet = new Set();
 
-  pages.forEach(({ fields }) => {
-    if (fields && fields.author) {
-      authorSet.add(fields.author)
+  pages.forEach(({ frontmatter = {} }) => {
+    if (frontmatter.author) {
+      authorSet.add(frontmatter.author)
     }
   });
 
