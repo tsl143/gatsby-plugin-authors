@@ -1,0 +1,36 @@
+{
+  "name": "gatsby-plugin-authors",
+  "description": "Gatsby plugin to show author pages for multiple authors blog",
+  "version": "1.0.0",
+  "author": "tsl143",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "authors"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "/*.js"
+  ],
+  "peerDependencies": {
+    "gatsby": ">2.0.0-beta"
+  },
+  "scripts": {
+    "build": "babel src --out-dir .",
+    "watch": "babel -w src --out-dir .",
+    "prepare": "cross-env NODE_ENV=production npm run build"
+  },
+  "bugs": {
+    "url": "https://github.com/tsl143/gatsby-plugin-authors/issues"
+  },
+  "homepage": "https://github.com/tsl143/gatsby-plugin-authors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsl143/gatsby-plugin-authors/issues"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "slug": "^1.1.0"
+  }
+}
